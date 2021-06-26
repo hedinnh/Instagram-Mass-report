@@ -1,7 +1,7 @@
 ## Instagram Mass report made with Python
 
-   <img src="https://img.shields.io/github/watchers/Rdimo/Instagram-Mass-report?style=social" alt="shield.png"></a>
-   <img src="https://img.shields.io/github/stars/Rdimo/Instagram-Mass-report?style=social" alt="shield.png"></a>
+   <img src="https://img.shields.io/github/watchers/Rdimo/Instagram-Mass-report?color=%237289DA&label=Watchers" alt="shield.png"></a>
+   <img src="https://img.shields.io/github/stars/Rdimo/Instagram-Mass-report?color=%237289DA&label=Stars" alt="shield.png"></a>
    <a href="https://rdimo.github.io/CheatAway/" target="_blank"> <img src="https://discordapp.com/api/guilds/850313477121507338/widget.png?style=shield" alt="shield.png"></a>
 
 #### Instagram Mass report was made by
