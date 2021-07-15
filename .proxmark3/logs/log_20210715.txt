@@ -1,0 +1,4 @@
+[=] Using UART port COM5
+
+[!] ERROR: invalid serial port COM5
+

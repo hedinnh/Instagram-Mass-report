@@ -79,7 +79,8 @@ def video_attack(proxies):
         i = i + 1
 
 def profile_attack(proxies):
-    username = ask_question("Enter the username of the person you want to report")
+    #username = ask_question("Enter the username of the person you want to report")
+    username = 'kingsanchezx'
     print(Style.RESET_ALL)
     if (len(proxies) == 0):
         for k in range(5):
@@ -104,54 +105,54 @@ def profile_attack(proxies):
 def main():
     print_success("Successfully loaded all the modules!\n")
 
-    ret = ask_question("Would you like to use a proxy? [Y / N]")
-
+    #ret = ask_question("Would you like to use a proxy? [Y / N]")
+    ret = "N"
     proxies = []
 
-    if (ret == "Y" or ret == "y"):
-        ret = ask_question("Would you like to collect your proxies from the internet? [Y / N]")
+    # if (ret == "Y" or ret == "y"):
+    #     ret = ask_question("Would you like to collect your proxies from the internet? [Y / N]")
 
-        if (ret == "Y" or ret == "y"):
-            print_status("Gathering proxy from the Internet! This may take a while.\n")
-            proxies = find_proxies()
-        elif (ret == "N" or ret == "n"):
-            print_status("Please have a maximum of 50 proxies in a file!")
-            file_path = ask_question("Enter the path to your proxy list")
-            proxies = parse_proxy_file(file_path)
-        else:
-            sleep(1)
-            print_logo()
+    #     if (ret == "Y" or ret == "y"):
+    #         print_status("Gathering proxy from the Internet! This may take a while.\n")
+    #         proxies = find_proxies()
+    #     elif (ret == "N" or ret == "n"):
+    #         print_status("Please have a maximum of 50 proxies in a file!")
+    #         file_path = ask_question("Enter the path to your proxy list")
+    #         proxies = parse_proxy_file(file_path)
+    #     else:
+    #         sleep(1)
+    #         print_logo()
 
-        print_success(str(len(proxies)) + " Number of proxy found!\n")
-    elif (ret == "N" or ret == "n"):
-        pass
-    else:
-        print_error("Not a valid option")
-        sleep(1)
-        print_logo()
+    #     print_success(str(len(proxies)) + " Number of proxy found!\n")
+    # elif (ret == "N" or ret == "n"):
+    #     pass
+    # else:
+    #     print_error("Not a valid option")
+    #     sleep(1)
+    #     print_logo()
 
     
+    profile_attack(proxies)
+    # print("")
+    # print_status("1 - Report a user.")
+    # print_status("2 - Report a video.")
+    # report_choice = ask_question("Please select the complaint method")
+    # print("")
 
-    print("")
-    print_status("1 - Report a user.")
-    print_status("2 - Report a video.")
-    report_choice = ask_question("Please select the complaint method")
-    print("")
-
-    if (report_choice.isdigit() == False):
-        print_error("Not a valid option")
-        sleep(1)
-        print_logo()
+    # if (report_choice.isdigit() == False):
+    #     print_error("Not a valid option")
+    #     sleep(1)
+    #     print_logo()
     
-    if (int(report_choice) > 2 or int(report_choice) == 0):
-        print_error("Not a valid option")
-        sleep(1)
-        print_logo()
+    # if (int(report_choice) > 2 or int(report_choice) == 0):
+    #     print_error("Not a valid option")
+    #     sleep(1)
+    #     print_logo()
 
-    if (int(report_choice) == 1):
-        profile_attack(proxies)
-    elif (int(report_choice) == 2):
-        video_attack(proxies)
+    # if (int(report_choice) == 1):
+    #     profile_attack(proxies)
+    # elif (int(report_choice) == 2):
+    #     video_attack(proxies)
 
 if __name__ == "__main__":
     print_logo()
